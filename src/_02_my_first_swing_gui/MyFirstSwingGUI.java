@@ -46,8 +46,10 @@ public class MyFirstSwingGUI {
 		// 11. Run your program again. Do you see your message?
 
 		// 12. Use your JLabel to call setIcon(loadImage())
+		label.setIcon(loadImage());
 
 		// 13. Re-pack the JFrame object
+		frame.pack();
 
 		// 14. Run the program one more time. Do you see the image?
 

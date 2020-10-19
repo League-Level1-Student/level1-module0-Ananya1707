@@ -26,34 +26,52 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-
+		String URL = "https://i.pinimg.com/originals/23/83/b8/2383b8c0a126d1d6e45c69e1f1d8c835.png";
 		// 2. create a variable of type "Component" that will hold your image
-
+		Component c;
 		// 3. use the "createImage()" method below to initialize your Component
-
+		c = createImage(URL);
 		// 4. add the image to the quiz window
-
+		quizWindow.add(c);
 		// 5. call the pack() method on the quiz window
-
+		quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+		String answer = JOptionPane.showInputDialog("What image is this?");
 		// 7. print "CORRECT" if the user gave the right answer
-
+		if(answer.equalsIgnoreCase("Smiley Face")) {
+			JOptionPane.showMessageDialog(null, "CORRECT");
+		}
 		// 8. print "INCORRECT" if the answer is wrong
-
+		else {
+			JOptionPane.showMessageDialog(null, "INCORRECT");		
+		}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
+		quizWindow.remove(c);
 
 		// 10. find another image and create it (might take more than one line
 		// of code)
-
+		String URL2 = "https://i.pinimg.com/originals/32/3e/3b/323e3b47f07fa1fb0a4b2ecb03b2c965.png";		
+		Component c2; 
+		c2 = createImage(URL2);
+		
 		// 11. add the second image to the quiz window
+		quizWindow.add(c2);
 
 		// 12. pack the quiz window
+		quizWindow.pack();
 
 		// 13. ask another question
+		String answer2 = JOptionPane.showInputDialog("What image is this?");
 
 		// 14+ check answer, say if correct or incorrect, etc.
+		if(answer2.equalsIgnoreCase("Sad Face")) {
+			JOptionPane.showMessageDialog(null, "CORRECT");
+			}
+		else {
+			JOptionPane.showMessageDialog(null, "INCORRECT");		
+			}
+		
 
 	}
 
