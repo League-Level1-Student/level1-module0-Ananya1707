@@ -1,4 +1,4 @@
-package _09_sound_effects_machine;
+package _10_cuteness_tv;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,11 +8,11 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class SoundEffectsMachine implements ActionListener {
-JButton button1;
-JButton button2;
-JButton button3;
-
+public class CutenessTV implements ActionListener {
+	JButton button1;
+	JButton button2;
+	JButton button3;
+	
 	public void showButton() {
 		JFrame frame = new JFrame();
 		frame.setVisible(true);
@@ -37,23 +37,17 @@ JButton button3;
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent event) {
+	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		
-		if(event.getSource() == button1) {
-			JOptionPane.showMessageDialog(null, "HONK! HONK!");
+		if(e.getSource() == button1) {
+			JOptionPane.showMessageDialog(null, "Cuteness");
 		}
-		
-		if(event.getSource() == button2) {
-			JOptionPane.showMessageDialog(null, "BANG BANG");
+		if(e.getSource() == button2) {
+			JOptionPane.showMessageDialog(null, "More cuteness");
 		}
-		
-		if(event.getSource() == button3) {
-			JOptionPane.showMessageDialog(null, "BUZZZZ");
+		if(e.getSource() == button3) {
+			JOptionPane.showMessageDialog(null, "Even more cutenesssssss");
 		}
-		
-		
-		
 	}
 
 }
